@@ -3,7 +3,7 @@ import Food from './Food'
 
 const Allmenu = () => {
     return (
-        <div className='spacing px-5 mx-4'>
+        <div className='spacing px-3 md:px-5 md:mx-4'>
             <div>
                 <h1 className='subtitle text-center my-5'>See all foods on our Menu</h1>
                 <section className='grid grid-cols-2 md:grid-cols-4 gap-4 my-5'>

@@ -3,7 +3,10 @@ import homeImg from "../../images/landing.png";
 
 const HomeHeader = () => {
     return (
-        <div className='md:flex '>
+        <div className='md:flex flex-row-reverse mb-8'>
+            <div className='flex md:w-1/2 items-center justify-center'>
+                <img className='rounded-full landing-img' alt="landing" src={homeImg}/>
+            </div>
             <div className='md:w-1/2 flex items-center justify-center'>
                 <div className='w-3/4'>
                     <h1 className='font-bold mb-3 text-3xl'>Order <span className='text-yellow-400'>Delicious</span> and Fresh meals anytime</h1>
@@ -17,9 +20,7 @@ const HomeHeader = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex items-center justify-center'>
-                <img className='rounded-full landing-img' alt="landing" src={homeImg}/>
-            </div>
+            
         </div>
     )
 }

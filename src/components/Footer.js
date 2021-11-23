@@ -6,9 +6,9 @@ import twitter from "../images/twitter.svg";
 const Footer = () => {
     return (
         <div className='bg-yellow-400 text-white'>
-            <div className='footer-top border-b p-5  border-white grid grid-cols-2'>
-                <div className='flex items-center justify-center'>
-                    <article className='w-4/5'>
+            <div className='footer-top border-b p-5  border-white grid md:grid-cols-2'>
+                <div className='flex items-center mt-8 justify-center'>
+                    <article className='mb-6 md:w-4/5'>
                         <p className='text-sm'>
                             At MM Catering, we egestas Quam aliquam orci,
                             amet feugiat aliquam pharetra. Neque, nibh accumsan ut nunc eget lectus
@@ -16,12 +16,11 @@ const Footer = () => {
                             euismod aliquam consequat.
                         </p>
                     </article>
-
                 </div>
                 <div className='flex items-center justify-center'>
                     <article>
                         <h3 className='text-sm mb-5 capitalize'>FOLLOW US ON SOCIAL MEDIA</h3>
-                        <div className='flex'>
+                        <div className='flex justify-center'>
                             <img src={facebook} className='h-6 w-6 mr-5' />
                             <img src={instagram} className='h-6 w-6 mr-5' />
                             <img src={twitter} className='h-6 w-6 mr-5' />
@@ -30,7 +29,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-b grid grid-cols-4'>
-                <div className='flex items-center'>
+                <div className='flex items-center '>
                     <p className='text-sm'>HOME</p>
                 </div>
                 <div className='flex items-center'>

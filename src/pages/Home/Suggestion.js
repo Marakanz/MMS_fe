@@ -2,9 +2,9 @@ import React from 'react'
 
 const Suggestion = () => {
     return (
-        <div className='my-5 grid md:grid-cols-2 gap-4 px-5 mx-4'>
+        <div className='my-5 grid md:grid-cols-2 gap-4 px-3 md:px-5 md:mx-4'>
             <div className='p-5'>
-                <h1 className='subtitle mb-5 w-4/5'>See what our customers recommend for you.</h1>
+                <h1 className='subtitle mb-5 md:w-4/5 text-center'>See what our customers recommend for you.</h1>
             </div>
             <div className='mx-3 rounded-lg p-4 flex items-end suggestion'>
                 <div className='w-full'>

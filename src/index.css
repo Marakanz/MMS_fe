@@ -128,5 +128,13 @@ code {
   }
   .dish{
     height: 250px;
+    width: inherit;
+  }
+  .footer-top{
+    height: auto;
+  }
+  .landing-img {
+    width: 250px;
+    height: 250px;
   }
 }
