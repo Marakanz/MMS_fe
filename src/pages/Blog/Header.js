@@ -3,7 +3,7 @@ import HeaderImg from "../../images/header.svg";
 
 const Header = () => {
     return (
-        <div className='grid grid-cols-2 bg-red-200'>
+        <div className='grid md:grid-cols-2 bg-red-200'>
             <div className='flex items-center justify-center pl-4'>
                 <div>
                     <h1 className='subtitle text-yellow-900 mb-3'>Read and Enjoy our Articles</h1>

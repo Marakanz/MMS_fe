@@ -22,7 +22,7 @@ const Navbar = () => {
                                 <Link to='/'>Home</Link>
                             </li>
                             <li className='mx-4 py-1 hover:bg-gray-100'>
-                                <Link to='/services'>Services</Link>
+                                <Link to='/menu'>Menu</Link>
                             </li>
                             <li active className='mx-4 py-1 hover:bg-gray-100'>
                                 <Link to='/posts'>Blog</Link>

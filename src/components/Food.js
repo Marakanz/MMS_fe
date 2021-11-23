@@ -3,7 +3,7 @@ import MenuItem from "../images/dishes2.png"
 
 const Food = () => {
     return (
-        <div className='w-full bg-gradient-to-b py-3 rounded-lg from-yellow-300 menu-item'>
+        <div className='w-full bg-gradient-to-b px-3 py-3 rounded-lg from-yellow-300 menu-item'>
             <div className='flex items-center justify-center'>
                 <img className=' menu-img rounded-full' src={MenuItem} />
             </div>

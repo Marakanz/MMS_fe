@@ -4,6 +4,7 @@ import Blogs from './Blogs';
 import Menu from './Menu';
 import Sidenav from './Sidenav';
 import CreateBlog from './CreateBlog';
+import CreateMenu from './CreateMenu';
 
 const Admin = () => {
     let { path } = useRouteMatch();
@@ -14,6 +15,7 @@ const Admin = () => {
                 <Route path={`${path}/blogs`} component={Blogs}/>
                 <Route exact path={`${path}/newpost`} component={CreateBlog}/>
                 <Route path={`${path}/menu`} component={Menu}/>
+                <Route path={`${path}/newmenu`} component={CreateMenu}/>
             </Switch>
         </div>
     )

@@ -4,7 +4,7 @@ import Food from '../../components/Food'
 const Menu = () => {
     return (
         <div className='p-4'>
-            <section className='grid grid-cols-3 gap-4'>
+            <section className='grid md:grid-cols-4 gap-4'>
                 <Food/>
                 <Food/>
                 <Food/>
