@@ -2,15 +2,17 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import Food from '../../components/Food'
 import Navbar from '../../components/Navbar'
-import { BASE_URL } from '../../utils'
 
 const MenuPage = () => {
-    const fetchMenu = async() => {
-        const res = await axios.get(`${BASE_URL}/menus`); 
-        console.log(res.data)
-    }
-
-    fetchMenu();
+    useEffect(() => {
+        const fetchMenu = async() => {
+            const res = await axios.get('/menus');
+            console.log(res.data)
+        }
+    
+        fetchMenu();
+    }, [])
+    
     return (
         <div>
             <Navbar/>
