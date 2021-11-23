@@ -1,4 +1,6 @@
 import React from 'react'
+import PhoneIcon from "../../images/Vector.svg";
+import MailIcon from "../../images/mail.svg";
 
 const Contact = () => {
     return (
@@ -23,6 +25,14 @@ const Contact = () => {
                             Also if you dont see what you want on our menu, we can make a custom order,
                             at an agreed cost just for you!
                         </p>
+                        <div className='flex items-center my-5'>
+                            <img src={MailIcon} className='h-4 w-4 mr-4'/>
+                            <p className='font-sm'>mmscatering@gmail.com</p>
+                        </div>
+                        <div className='flex items-center my-5'>
+                            <img src={PhoneIcon} className='h-4 w-4 mr-4'/>
+                            <p className='font-sm'>+1 414-556-6480, +1 414-589-2457</p>
+                        </div>
                     </div>
                 </div>
                 <div>
