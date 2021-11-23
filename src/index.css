@@ -1,8 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +12,121 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.nav-center {
+  width: 100%;
+}
+.body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navbar {
+  width: 100vw;
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.buttons {
+  @apply text-white px-3 py-2 rounded-full bg-yellow-400;
+}
+.buttons-invert {
+  @apply text-yellow-400 px-3 py-2 rounded-full bg-white border border-yellow-400;
+}
+
+.landing-img {
+  width: 400px;
+  height: 400px;
+}
+.dish{
+  height: 400px;
+}
+.menu-item {
+  height: 300px;
+}
+.subtitle {
+  @apply font-bold mb-3 text-2xl
+}
+.menu-img{
+  width: 150px;
+  height: 150px;
+}
+.spacing {
+  margin-top: 150px;
+}
+.suggestion{
+  background-image: url("./images/suggestions.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.suscribe{
+  height: 400px;
+}
+.message {
+  transform: translateY(50px);
+}
+.message-input{
+  @apply px-5 py-1 border border-gray-300 my-5 text-sm rounded-full;
+}
+.message-text{
+  @apply px-3 py-1  border border-gray-300 my-5 text-sm rounded-lg;
+}
+.footer-top{
+  height: 300px;
+}
+.footer-b {
+  height: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.soon {
+  height: 250px;
+  width: 400px;
+}
+
+.coming-soon {
+  height: 400px;
+}
+.articles {
+    height: 450px;
+}
+.single-post{
+  height: 300px;
+  background-color: rgb(240, 245, 245);
+}
+.recipe1{
+  background-image: url("./images/recipe1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recipe2{
+  background-image: url("./images/recipe2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.recipe3{
+  background-image: url("./images/recipe3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sidenav{
+  height: 100vh;
+}
+.profile-info{
+  width: inherit;
+}
+
+@media screen and (max-width: 400px ) {
+  .soon{
+    height: 200px;
+    width: inherit;
+  }
+  .articles {
+    height: 300px;
+  }
+  .dish{
+    height: 250px;
+  }
 }
