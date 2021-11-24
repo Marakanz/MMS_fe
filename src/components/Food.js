@@ -14,11 +14,11 @@ const Food = ({ item }) => {
         </>
       ) : (
         <>
-          <div className="flex items-center justify-center">
+          {/* <div className="flex items-center justify-center">
             <img className=" menu-img rounded-full" alt="" src={MenuItem} />
           </div>
           <h1 className="font-bold text-center mb-3 text-xl">Jollof Rice</h1>
-          <p className="text-sm mb-3 text-center"> Rice boiled with tomatoes, pepper, and delicious spices</p>
+          <p className="text-sm mb-3 text-center"> Rice boiled with tomatoes, pepper, and delicious spices</p> */}
         </>
       )}
     </div>

@@ -27,7 +27,7 @@ const Allmenu = () => {
         <h1 className="subtitle text-center my-5">See all foods on our Menu</h1>
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4 my-5">
           {menu.map((item) => (
-            <Food key={item._id} items={item} />
+            <Food key={item._id} item={item} />
           ))}
           
         </section>

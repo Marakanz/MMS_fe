@@ -13,9 +13,9 @@ const Navbar = () => {
 
                 <div className='nav-center block text-xl px-4 lg:flex lg:justify-between items-center'>
                     <div className='flex items-center px-5 justify-between'>
-                        <Link to='/'>MM's</Link>
+                        <Link className='p-2' to='/'>MM's</Link>
                         <span onClick={() => setIsOpen(!isOpen)} className='p-2 lg:hidden cursor-pointer'>
-                            <FaBars></FaBars>
+                            <FaBars className='w-6 h-6'></FaBars>
                         </span>
                     </div>
                     <div className={`${isOpen ? 'text-lg  lg:w-2/5 lg:flex lg:items-center lg:justify-around' 
