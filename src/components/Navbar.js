@@ -11,10 +11,10 @@ const Navbar = () => {
             <nav className='navbar shadow lg:flex items-center
             bg-white text-black'>
 
-                <div className='nav-center block text-xl py-2 px-4 lg:flex lg:justify-between items-center'>
+                <div className='nav-center block text-xl px-4 lg:flex lg:justify-between items-center'>
                     <div className='flex items-center px-5 justify-between'>
                         <Link to='/'>MM's</Link>
-                        <span onClick={() => setIsOpen(!isOpen)} className='p-2 cursor-pointer'>
+                        <span onClick={() => setIsOpen(!isOpen)} className='p-2 lg:hidden cursor-pointer'>
                             <FaBars></FaBars>
                         </span>
                     </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
                         <ul className='tabs px-2 lg:flex lg:items-center'>
                             {history == "/" ? (
                                 <>
-                                    <li className='py-1 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                    <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
                                         <button className="">
                                             <Link to='/'>Home</Link>
                                         </button>
@@ -31,7 +31,7 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-1 px-4 hover:bg-gray-100'>
+                                    <li className='py-2.5 px-4 hover:bg-gray-100'>
                                         <button className="active:bg-yellow-400">
                                             <Link to='/'>Home</Link>
                                         </button>
@@ -40,7 +40,7 @@ const Navbar = () => {
                             )}
                             {history.includes("/posts") ? (
                                 <>
-                                    <li className='py-1 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                    <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
                                         <button >
                                             <Link to='/posts'>Blog</Link>
                                         </button>
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-1 px-4 hover:bg-gray-100'>
+                                    <li className='py-2.5 px-4 hover:bg-gray-100'>
                                         <button >
                                             <Link to='/posts'>Blog</Link>
                                         </button>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
                             {history.includes("/menu") ? (
                                 <>
-                                    <li className='py-1 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                    <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
                                         <button >
                                             <Link to='/menu'>Menu</Link>
                                         </button>
@@ -66,7 +66,7 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-1 px-4 hover:bg-gray-100'>
+                                    <li className='py-2.5 px-4 hover:bg-gray-100'>
                                         <button >
                                             <Link to='/menu'>Menu</Link>
                                         </button>
