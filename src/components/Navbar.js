@@ -1,37 +1,86 @@
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import React from 'react';
-import { useState,useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-    const [isOpen, setIsOpen ] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const history = useHistory().location.pathname.toLowerCase();
     return (
         <div>
             <nav className='navbar shadow lg:flex items-center
             bg-white text-black'>
-                <div className='flex items-center px-5 justify-between'>
-                        <a href="link">Navbar</a>
-                        <button onClick={ () => setIsOpen(!isOpen)} className='p-2 border border-gray-400 shadow rounded-md lg:hidden focus:ring focus:ring-gray-400'>
+
+                <div className='nav-center block text-xl py-2 px-4 lg:flex lg:justify-between items-center'>
+                    <div className='flex items-center px-5 justify-between'>
+                        <Link to='/'>MM's</Link>
+                        <span onClick={() => setIsOpen(!isOpen)} className='p-2 cursor-pointer'>
                             <FaBars></FaBars>
-                        </button>
-                </div>
-                <div className='nav-center block text-xl py-2 px-4 lg:flex lg:justify-end items-center'>
-                    <div className={`${isOpen ? 'mx-4 text-lg  lg:w-2/5 lg:flex lg:items-center lg:justify-around' : 'px mx-4 hidden text-lg lg:w-2/5 lg:flex lg:items-center lg:justify-around'}`}>
-                        <ul className='px-2 lg:flex lg:items-center'>
-                            <li className='mx-4 py-1 hover:bg-gray-100'>
-                                <Link to='/'>Home</Link>
-                            </li>
-                            <li className='mx-4 py-1 hover:bg-gray-100'>
-                                <Link to='/menu'>Menu</Link>
-                            </li>
-                            <li active className='mx-4 py-1 hover:bg-gray-100'>
-                                <Link to='/posts'>Blog</Link>
-                            </li>
-                        </ul>
-                        <button className='text-white text-xs font-semibold buttons'>CONTACT US</button>
+                        </span>
                     </div>
-            
-                    
+                    <div className={`${isOpen ? 'text-lg  lg:w-2/5 lg:flex lg:items-center lg:justify-around' 
+                     : 'hidden text-lg lg:w-2/5 lg:flex lg:items-center lg:justify-around'}`}>
+                        <ul className='tabs px-2 lg:flex lg:items-center'>
+                            {history == "/" ? (
+                                <>
+                                    <li className='py-1 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                        <button className="">
+                                            <Link to='/'>Home</Link>
+                                        </button>
+                                    </li>
+                                </>
+                            ) : (
+                                <>
+                                    <li className='py-1 px-4 hover:bg-gray-100'>
+                                        <button className="active:bg-yellow-400">
+                                            <Link to='/'>Home</Link>
+                                        </button>
+                                    </li>
+                                </>
+                            )}
+                            {history.includes("/posts") ? (
+                                <>
+                                    <li className='py-1 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                        <button >
+                                            <Link to='/posts'>Blog</Link>
+                                        </button>
+                                    </li>
+                                </>
+                            ) : (
+                                <>
+                                    <li className='py-1 px-4 hover:bg-gray-100'>
+                                        <button >
+                                            <Link to='/posts'>Blog</Link>
+                                        </button>
+                                    </li>
+                                </>
+                            )}
+
+                            {history.includes("/menu") ? (
+                                <>
+                                    <li className='py-1 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                        <button >
+                                            <Link to='/menu'>Menu</Link>
+                                        </button>
+                                    </li>
+                                </>
+                            ) : (
+                                <>
+                                    <li className='py-1 px-4 hover:bg-gray-100'>
+                                        <button >
+                                            <Link to='/menu'>Menu</Link>
+                                        </button>
+                                    </li>
+                                </>
+                            )}
+
+                        </ul>
+                        <div className='flex justify-end'>
+                            <button className='text-white text-xs font-semibold buttons'>CONTACT US</button>
+                        </div>
+                    </div>
+
+
                 </div>
             </nav>
         </div>

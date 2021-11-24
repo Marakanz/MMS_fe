@@ -1,13 +1,19 @@
 import axios from 'axios'
 import React, { useEffect } from 'react'
+import { useState } from 'react'
 import Food from '../../components/Food'
 import Navbar from '../../components/Navbar'
 
 const MenuPage = () => {
+    axios.defaults.baseURL = "https://mmskitchen.herokuapp.com";
+    axios.defaults.headers.post["Content-Type"] = "application/json";
+    axios.defaults.headers.common["Access-Control-Allow-Origin"] = "*";
+    const [ menu, setMenu ] = useState(null);
     useEffect(() => {
         const fetchMenu = async() => {
             const res = await axios.get('/menus');
             console.log(res.data)
+            setMenu(res.data)
         }
     
         fetchMenu();
@@ -21,14 +27,12 @@ const MenuPage = () => {
                 <button className='buttons'>Sort</button>
             </div>
             <div className='grid md:grid-cols-4 gap-5 px-5'>
+                { menu?.map((item) => (
+                    <Food item={item}/>
+                ))}
+                {/* <Food/>
                 <Food/>
-                <Food/>
-                <Food/>
-                <Food/>
-                <Food/>
-                <Food/>
-                <Food/>
-                <Food/>
+                <Food/> */}
             </div>
         </div>
     )

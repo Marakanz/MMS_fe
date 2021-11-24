@@ -26,6 +26,10 @@ code {
   font-family: 'Work Sans', sans-serif;
   overflow-x: hidden;
 }
+.tabs button:active{
+  border-bottom: 17px;
+  border-color: rgb(248, 184, 7);
+}
 
 .buttons {
   @apply text-white px-3 py-2 rounded-full bg-yellow-400;

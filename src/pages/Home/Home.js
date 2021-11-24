@@ -8,8 +8,28 @@ import Footer from "../../components/Footer"
 import ComingSoon from "./ComingSoon"
 import Articles from '../../components/Articles'
 import Navbar from '../../components/Navbar'
+import Dish1 from "../../images/dishes1.png";
+import Dish2 from "../../images/dishes2.png";
+import Dish3 from "../../images/dishes3.png";
 
 const Home = () => {
+    const dishes = [
+        {
+            img: Dish3,
+            title: "Weddings",
+            desc: "Different types of Local delicacies, specially prepared just for you"
+        },
+        {
+            img: Dish2,
+            title: "Birthday Parties",
+            desc: "Different types of intercontinental delicacies, specially prepared just for you"
+        },
+        {
+            img: Dish1,
+            title: "Family Gatherings",
+            desc: "Different types of fingerfoods and snacks, specially prepared just for you"
+        }
+    ]
     return (
         <div>
             <Navbar/>
@@ -24,9 +44,10 @@ const Home = () => {
                 </div>
                 
                 <div className='mb-5 grid md:grid-cols-3 gap-4 px-3 md:px-5 mx-4'>
-                    <Dishes />
-                    <Dishes />
-                    <Dishes />
+                    { dishes.map((dish) => (
+                        <Dishes dish={dish}/>
+                    ))}
+                    
                 </div>
                 <Allmenu />
                 <Suggestion />
