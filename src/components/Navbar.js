@@ -76,7 +76,9 @@ const Navbar = () => {
 
                         </ul>
                         <div className='flex justify-end'>
-                            <button className='text-white text-xs font-semibold buttons'>CONTACT US</button>
+                            <button className='text-white text-xs font-semibold buttons'>
+                                <a href="#contact">CONTACT US</a>
+                            </button>
                         </div>
                     </div>
 
