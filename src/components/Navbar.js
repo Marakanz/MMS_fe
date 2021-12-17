@@ -21,7 +21,7 @@ const Navbar = () => {
                     <div className={`${isOpen ? 'text-lg  lg:w-2/5 lg:flex lg:items-center lg:justify-around' 
                      : 'hidden text-lg lg:w-2/5 lg:flex lg:items-center lg:justify-around'}`}>
                         <ul className='tabs px-2 lg:flex lg:items-center'>
-                            {history == "/" ? (
+                            {history === "/" ? (
                                 <>
                                     <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
                                         <button className="">
@@ -75,7 +75,7 @@ const Navbar = () => {
                             )}
 
                         </ul>
-                        <div className='flex justify-end'>
+                        <div className='flex justify-end px-4 py-2'>
                             <button className='text-white text-xs font-semibold buttons'>
                                 <a href="#contact">CONTACT US</a>
                             </button>
