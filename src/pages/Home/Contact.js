@@ -4,7 +4,7 @@ import MailIcon from "../../images/mail.svg";
 
 const Contact = () => {
     return (
-        <div className='my-5 px-5 mx-4'>
+        <div className='my-5 px-5 mx-4' id="contact">
             <div className='suscribe flex items-center justify-center'>
                 <div className=''>
                     <h1 className='subtitle text-center my-5'>Suscribe to Our Newsletter</h1>

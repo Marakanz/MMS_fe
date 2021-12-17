@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import facebook from "../images/facebook.svg";
 import instagram from "../images/instagram.svg";
 import twitter from "../images/twitter.svg";
@@ -30,10 +31,14 @@ const Footer = () => {
             </div>
             <div className='footer-b grid grid-cols-4'>
                 <div className='flex items-center '>
-                    <p className='text-sm'>HOME</p>
+                    <Link to="/">
+                        <p className='text-sm'>HOME</p>
+                    </Link>
                 </div>
                 <div className='flex items-center'>
-                    <p className='text-sm'>BLOG</p>
+                    <Link to="/posts">
+                        <p className='text-sm'>BLOG</p>
+                    </Link>
                 </div>
                 <div className='flex items-center'>
                     <p className='text-sm'>SERVICES</p>

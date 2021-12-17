@@ -26,6 +26,10 @@ code {
   font-family: 'Work Sans', sans-serif;
   overflow-x: hidden;
 }
+.tabs button:active{
+  border-bottom: 17px;
+  border-color: rgb(248, 184, 7);
+}
 
 .buttons {
   @apply text-white px-3 py-2 rounded-full bg-yellow-400;
@@ -42,18 +46,22 @@ code {
   height: 400px;
 }
 .menu-item {
-  height: 300px;
+  height: auto;
 }
 .subtitle {
   @apply font-bold mb-3 text-2xl
 }
 .menu-img{
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   @apply object-cover;
 }
 .spacing {
   margin-top: 150px;
+}
+
+.login {
+  height: 100vh;
 }
 .suggestion{
   background-image: url("./images/suggestions.png");
@@ -118,7 +126,9 @@ code {
 .profile-info{
   width: inherit;
 }
-
+.login-input{
+  @apply rounded-full mb-8 w-4/5 px-5 focus:outline-none py-2 border border-gray-300;
+}
 @media screen and (max-width: 400px ) {
   .soon{
     height: 200px;
@@ -130,6 +140,11 @@ code {
   .dish{
     height: 250px;
     width: inherit;
+  }
+  .menu-img{
+    width: 150px;
+    height: 150px;
+    @apply object-cover;
   }
   .footer-top{
     height: auto;

@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Food from "./Food";
 
 axios.defaults.baseURL = "https://mmskitchen.herokuapp.com";
@@ -18,8 +19,8 @@ const Allmenu = () => {
 
     fetchMenu();
   }, []);
-  if(!menu){
-      return <div className='p-4 text-4xl animate-pulse'>Loading...</div>
+  if (!menu) {
+    return <div className='p-4 text-4xl animate-pulse'>Loading...</div>
   }
   return (
     <div className="spacing px-3 md:px-5 md:mx-4">
@@ -27,12 +28,14 @@ const Allmenu = () => {
         <h1 className="subtitle text-center my-5">See all foods on our Menu</h1>
         <section className="grid grid-cols-2 md:grid-cols-4 gap-4 my-5">
           {menu.map((item) => (
-            <Food key={item._id} items={item} />
+            <Food key={item._id} item={item} />
           ))}
-          
+
         </section>
         <div className="flex items-center justify-center my-5">
-          <button className="buttons text-xs">SEE ALL</button>
+          <Link to="/menu">
+            <button className="buttons hover:shadow-md text-xs">SEE ALL</button>
+          </Link>
         </div>
       </div>
     </div>

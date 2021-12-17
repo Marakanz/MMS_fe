@@ -4,7 +4,7 @@ const Categories = () => {
     return (
         <div className='my-12'>
             <h1 className='subtitle mb-7'>Categories</h1>
-            <div className='grid md:grid-cols-2 gap-4 h-96'>
+            <div className='grid md:grid-cols-2 gap-4 md:h-96'>
                 <div className='flex flex-col justify-end p-4 text-white recipe1'>
                     <h1 className='subtitle mb-3'>Recipes and Meal Prep</h1>
                     <p className='font-sm'>Learn how to make your favorite dishes, both local and intercontinental 

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import homeImg from "../../images/landing.png";
 
 const HomeHeader = () => {
     return (
         <div className='md:flex flex-row-reverse mb-8'>
             <div className='flex md:w-1/2 items-center justify-center'>
-                <img className='rounded-full landing-img' alt="landing" src={homeImg}/>
+                <img className='rounded-full landing-img' alt="landing" src={homeImg} />
             </div>
             <div className='md:w-1/2 flex items-center justify-center'>
                 <div className='w-3/4'>
@@ -16,11 +17,13 @@ const HomeHeader = () => {
                     </p>
                     <div className='flex'>
                         <button className='buttons text-xs mr-3'>SEE OUR SERVICES</button>
-                        <button className='buttons-invert text-xs'>CONTACT US</button>
+                        <button className='buttons-invert text-xs'>
+                            <a href="#contact">CONTACT US</a>
+                        </button>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     )
 }
