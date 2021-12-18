@@ -20,13 +20,20 @@ const Allmenu = () => {
     fetchMenu();
   }, []);
   if (!menu) {
-    return <div className='p-4 text-4xl animate-pulse'>Loading...</div>
+    return <div className='p-4 text-4xl text-center animate-pulse'>Loading...</div>
   }
   return (
-    <div className="spacing px-3 md:px-5 md:mx-4">
+    <div className="py-8 w-9/10 mx-auto">
       <div>
-        <h1 className="subtitle text-center my-5">See all foods on our Menu</h1>
-        <section className="grid grid-cols-2 md:grid-cols-4 gap-4 my-5">
+        <div className='md:w-2/3 my-12 mx-auto'>
+          <h1 className="subtitle text-center my-5">See all foods on our Menu</h1>
+          <p className='text-gray-700 text-xl my-2'>
+            MM Catering offers the best catering services.
+            we make our meals from carefully selected ingredients with rich taste. You can proceed to make bulk orders.
+          </p>
+        </div>
+
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-6 my-5">
           {menu.map((item) => (
             <Food key={item._id} item={item} />
           ))}
@@ -34,7 +41,7 @@ const Allmenu = () => {
         </section>
         <div className="flex items-center justify-center my-5">
           <Link to="/menu">
-            <button className="buttons hover:shadow-md text-xs">SEE ALL</button>
+            <button className="buttons hover:shadow-md font-semibold">SEE ALL</button>
           </Link>
         </div>
       </div>

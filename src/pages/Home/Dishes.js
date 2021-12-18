@@ -6,9 +6,9 @@ import Dish3 from "../../images/dishes3.png";
 const Dishes = ({dish}) => {
     return (
         <div className='w-full'>
-            <img className='dish mb-4' src={dish.img}/>
-            <h1 className='font-bold mb-3 text-xl'> {dish.title}</h1>
-            <p className='text-sm mb-3'>{dish.desc}</p>
+            <img className='' alt='' src={dish.img}/>
+            <h1 className='font-bold my-3 md:text-2xl'> {dish.title}</h1>
+            <p className='my-3 text-lg text-gray-700'>{dish.desc}</p>
         </div>
     )
 }

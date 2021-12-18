@@ -8,7 +8,7 @@ const Navbar = () => {
     const history = useHistory().location.pathname.toLowerCase();
     return (
         <div>
-            <nav className='navbar shadow lg:flex items-center
+            <nav className='navbar lg:flex p-2 items-center
             bg-white text-black'>
 
                 <div className='nav-center block text-xl px-4 lg:flex lg:justify-between items-center'>
@@ -23,7 +23,7 @@ const Navbar = () => {
                         <ul className='tabs px-2 lg:flex lg:items-center'>
                             {history === "/" ? (
                                 <>
-                                    <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
                                         <button className="">
                                             <Link to='/'>Home</Link>
                                         </button>
@@ -31,8 +31,8 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-2.5 px-4 hover:bg-gray-100'>
-                                        <button className="active:bg-yellow-400">
+                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
+                                        <button className="active:bg-orange">
                                             <Link to='/'>Home</Link>
                                         </button>
                                     </li>
@@ -40,7 +40,7 @@ const Navbar = () => {
                             )}
                             {history.includes("/posts") ? (
                                 <>
-                                    <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
                                         <button >
                                             <Link to='/posts'>Blog</Link>
                                         </button>
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-2.5 px-4 hover:bg-gray-100'>
+                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
                                         <button >
                                             <Link to='/posts'>Blog</Link>
                                         </button>
@@ -58,7 +58,7 @@ const Navbar = () => {
 
                             {history.includes("/menu") ? (
                                 <>
-                                    <li className='py-2.5 px-4 hover:bg-gray-100 md:border-b-4 border-yellow-400'>
+                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
                                         <button >
                                             <Link to='/menu'>Menu</Link>
                                         </button>
@@ -66,7 +66,7 @@ const Navbar = () => {
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-2.5 px-4 hover:bg-gray-100'>
+                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
                                         <button >
                                             <Link to='/menu'>Menu</Link>
                                         </button>
@@ -76,7 +76,7 @@ const Navbar = () => {
 
                         </ul>
                         <div className='flex justify-end px-4 py-2'>
-                            <button className='text-white text-xs font-semibold buttons'>
+                            <button className='text-white text-base font-semibold buttons'>
                                 <a href="#contact">CONTACT US</a>
                             </button>
                         </div>

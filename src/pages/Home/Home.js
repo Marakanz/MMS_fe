@@ -35,19 +35,21 @@ const Home = () => {
             <Navbar/>
             <section className=''>
                 <HomeHeader />
-                <div className='md:w-3/5 my-5  px-3 md:px-5 mx-4'>
+                <div className='w-9/10 mx-auto'>
+                <div className='md:w-2/3'>
                     <h1 className='subtitle'>Services we Offer</h1>
-                    <p className="text-base mb-5">
-                        MM catering offers the best catering services, we make our meals from carfully
-                        selected ingredients with rich taste. you can proceed to make bulk orders.
+                    <p className="text-xl text-gray-700 my-5 mb-12">
+                    MM Catering offers the best catering services. 
+                    we make our meals from carefully selected ingredients with rich taste. You can proceed to make bulk orders.
                     </p>
                 </div>
                 
-                <div className='mb-5 grid md:grid-cols-3 gap-4 px-3 md:px-5 mx-4'>
+                <div className='mb-5 grid md:grid-cols-3 gap-4'>
                     { dishes.map((dish) => (
                         <Dishes dish={dish}/>
                     ))}
                     
+                </div>
                 </div>
                 <Allmenu />
                 <Suggestion />
