@@ -11,7 +11,7 @@ const Blog = () => {
     return (
         <div className=''>
             <Navbar/>
-            <div className='px-12 mt-5 pt-5 mb-16'>
+            <div className='px-4 md:px-12 mt-5 pt-5 mb-16'>
                 <Header/>
                 <Categories/>
                 <Latest/>

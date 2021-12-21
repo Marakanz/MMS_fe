@@ -14,7 +14,13 @@ import { getMenuFailure,
         createMenuSuccess,
         createMenuFailure
     } from "./slices/menuSlice";
-import { loginStart, loginSuccess, LoginFailure } from "./slices/userSlice";
+import { 
+    loginStart, 
+    loginSuccess, 
+    LoginFailure,
+    registerFailure,
+    registerStart,
+    registerSuccess } from "./slices/userSlice";
 
 axios.defaults.baseURL = "https://mmskitchen.herokuapp.com";
 axios.defaults.headers.post["Content-Type"] = "application/json";
@@ -40,11 +46,22 @@ export const login = async(dispatch, user) => {
     try {
             const res = await axios.post("/login", user);
             dispatch(loginSuccess(res.data));
-            localStorage.setItem("user", res.data.token)
+            localStorage.setItem("user", res.data.token);
             console.log(res.data);
-            
     } catch(err) {
         dispatch(LoginFailure());
+    }
+}
+
+export const register = async(dispatch, newUser) => {
+    dispatch(registerStart());
+    try {
+            const res = await axios.post("/signup", newUser);
+            dispatch(registerSuccess(res.data));
+            console.log("New user created");
+            console.log(res.data);
+    } catch(err) {
+        dispatch(registerFailure());
     }
 }
 // BLOG ACTIONS
@@ -60,7 +77,6 @@ export const getBlogs = async(dispatch) => {
     }
 }
 
-
 export const createBlog = async(dispatch, newBlog) => {
     dispatch(createBlogStart());
     try {
@@ -74,6 +90,7 @@ export const createBlog = async(dispatch, newBlog) => {
         dispatch(createBlogFailure());
     }
 }
+
 //MENU ACTIONS
 export const getMenus = async(dispatch) => {
     dispatch(getMenuStart());
