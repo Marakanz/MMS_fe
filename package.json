@@ -1,7 +1,6 @@
 {
   "name": "mms",
   "version": "0.1.0",
-  "homepage": "https://mmscatering.netlify.app",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^1.6.10",
