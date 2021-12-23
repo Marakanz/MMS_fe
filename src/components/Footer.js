@@ -22,9 +22,9 @@ const Footer = () => {
                     <article>
                         <h3 className='text-sm mb-5 capitalize'>FOLLOW US ON SOCIAL MEDIA</h3>
                         <div className='flex justify-center'>
-                            <img src={facebook} className='h-6 w-6 mr-5' />
-                            <img src={instagram} className='h-6 w-6 mr-5' />
-                            <img src={twitter} className='h-6 w-6 mr-5' />
+                            <img src={facebook} alt="footer-img" className='h-6 w-6 mr-5' />
+                            <img src={instagram} alt="footer-img" className='h-6 w-6 mr-5' />
+                            <img src={twitter} alt="footer-img" className='h-6 w-6 mr-5' />
                         </div>
                     </article>
                 </div>

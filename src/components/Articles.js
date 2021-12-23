@@ -1,5 +1,4 @@
 import React from 'react';
-import Dish from "../images/dishes2.png";
 import { useEffect } from 'react';
 import Singleblog from './Singleblog';
 import { useDispatch, useSelector } from 'react-redux';
@@ -8,9 +7,9 @@ import { getBlogs } from "../redux/action";
 const Articles = () => {
     const dispatch  = useDispatch();
     const blogs = useSelector((state)=> state.blogs.blogs)
-
+    console.log(blogs);
     useEffect(()=>{
-        getBlogs(dispatch)
+        getBlogs(dispatch);
     },[dispatch])
     return (
         <div className='w-9/10 mx-auto'>
@@ -20,7 +19,7 @@ const Articles = () => {
             <div className='grid md:grid-cols-3 gap-8'>
                 {blogs?.map((blog)=> (
                     <>
-                        <Singleblog blog={blog}/>
+                        <Singleblog key={blog._id} blog={blog}/>
                     </>
                 ))}
             </div>

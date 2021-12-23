@@ -16,16 +16,19 @@ const Home = () => {
     const dishes = [
         {
             img: Dish3,
+            id: 1,
             title: "Weddings",
             desc: "Different types of Local delicacies, specially prepared just for you"
         },
         {
             img: Dish2,
+            id: 2,
             title: "Birthday Parties",
             desc: "Different types of intercontinental delicacies, specially prepared just for you"
         },
         {
             img: Dish1,
+            id: 3,
             title: "Family Gatherings",
             desc: "Different types of fingerfoods and snacks, specially prepared just for you"
         }
@@ -46,7 +49,7 @@ const Home = () => {
                 
                 <div className='mb-5 grid md:grid-cols-3 gap-4'>
                     { dishes.map((dish) => (
-                        <Dishes dish={dish}/>
+                        <Dishes key={dish.id} dish={dish}/>
                     ))}
                     
                 </div>
