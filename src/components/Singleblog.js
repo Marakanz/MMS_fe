@@ -5,7 +5,7 @@ import Dish from "../images/dishes2.png"
 
 const Singleblog = ({ blog }) => {
     return (
-        <div>
+        <div key={blog._id}>
             <div className='single-post hover:shadow-md'>
                 <img src={blog.img} alt={blog.title} className='w-full h-2/3' />
                 <div className=' grid items-center h-1/3 w-5/6 mx-auto p-2'>
