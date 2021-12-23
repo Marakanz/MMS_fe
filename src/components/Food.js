@@ -1,5 +1,4 @@
 import React from "react";
-import MenuItem from "../images/dishes2.png";
 
 const Food = ({ item }) => {
   return (

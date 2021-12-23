@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-
-
 import Admin from "./pages/Admin/Index";
 import Blog from "./pages/Blog/Blog";
 import BlogPost from "./pages/Blog/BlogPost";
@@ -14,10 +12,9 @@ function App() {
   const user = useSelector((state) => state.user);
   return (
     <div className="body">
-      
       <Router>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home/>
           </Route>
           <Route exact path="/posts">
