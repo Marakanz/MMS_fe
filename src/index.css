@@ -82,10 +82,10 @@ code {
     @apply px-3 py-1  border border-gray-300 my-5 text-sm rounded-lg;
   }
   .footer-top {
-    height: 300px;
+    height: auto;
   }
   .footer-b {
-    height: 50px;
+    height: 100px;
     padding-left: 40px;
     padding-right: 40px;
   }

@@ -18,59 +18,59 @@ const Navbar = () => {
                             <FaBars className='w-6 h-6'></FaBars>
                         </span>
                     </div>
-                    <div className={`${isOpen ? 'text-lg  lg:w-2/5 lg:flex lg:items-center lg:justify-around' 
-                     : 'hidden text-lg lg:w-2/5 lg:flex lg:items-center lg:justify-around'}`}>
+                    <div className={`${isOpen ? 'text-lg  lg:w-2/5 lg:flex lg:items-center lg:justify-around'
+                        : 'hidden text-lg lg:w-2/5 lg:flex lg:items-center lg:justify-around'}`}>
                         <ul className='tabs px-2 lg:flex lg:items-center'>
                             {history === "/" ? (
                                 <>
-                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
-                                        <button className="">
-                                            <Link to='/'>Home</Link>
-                                        </button>
-                                    </li>
+                                    <Link to="/">
+                                        <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
+                                            Home
+                                        </li>
+                                    </Link>
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
-                                        <button className="active:bg-orange">
-                                            <Link to='/'>Home</Link>
-                                        </button>
-                                    </li>
+                                    <Link to="/">
+                                        <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
+                                            Home
+                                        </li>
+                                    </Link>
                                 </>
                             )}
                             {history.includes("/posts") ? (
                                 <>
-                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
-                                        <button >
-                                            <Link to='/posts'>Blog</Link>
-                                        </button>
-                                    </li>
+                                    <Link to="/posts">
+                                        <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
+                                            Blog
+                                        </li>
+                                    </Link>
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
-                                        <button >
-                                            <Link to='/posts'>Blog</Link>
-                                        </button>
-                                    </li>
+                                    <Link to="/posts">
+                                        <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
+                                            Blog
+                                        </li>
+                                    </Link>
                                 </>
                             )}
 
                             {history.includes("/menu") ? (
                                 <>
-                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
-                                        <button >
-                                            <Link to='/menu'>Menu</Link>
-                                        </button>
-                                    </li>
+                                    <Link to="/menu">
+                                        <li className='py-2.5 px-4 mx-3 hover:bg-gray-100 md:border-b-4 border-orange'>
+                                            Menu
+                                        </li>
+                                    </Link>
                                 </>
                             ) : (
                                 <>
-                                    <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
-                                        <button >
-                                            <Link to='/menu'>Menu</Link>
-                                        </button>
-                                    </li>
+                                    <Link to="/menu">
+                                        <li className='py-2.5 px-4 mx-3 hover:bg-gray-100'>
+                                            Menu
+                                        </li>
+                                    </Link>
                                 </>
                             )}
 
