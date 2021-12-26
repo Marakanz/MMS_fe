@@ -22,9 +22,11 @@ const Footer = () => {
                         <article>
                             <h3 className='text-sm mb-5 font-semibold capitalize'>FOLLOW US ON SOCIAL MEDIA</h3>
                             <div className='flex justify-center'>
-                                <img src={instagram} alt="footer-img" className='h-6 w-6 mr-10' />
-                                <img src={twitter} alt="footer-img" className='h-6 w-6 mr-10' />
-                                <img src={facebook} alt="footer-img" className='h-6 w-6 mr-10' />
+                                <a href='https://instagram.com/mms.catering?utm_medium=copy_link'>
+                                    <img src={instagram} alt="footer-img" className='h-6 w-6 mr-10' />
+                                </a>
+                                {/* <img src={twitter} alt="footer-img" className='h-6 w-6 mr-10' />
+                                <img src={facebook} alt="footer-img" className='h-6 w-6 mr-10' /> */}
                             </div>
                         </article>
                     </div>
@@ -34,21 +36,23 @@ const Footer = () => {
                 </div>
             </div>
             <div className='footer-b grid grid-cols-4'>
-                <div className='flex items-center '>
+                <div className='flex items-center justify-center'>
                     <Link to="/">
                         <p className='text-sm font-semibold'>HOME</p>
                     </Link>
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-center'>
                     <Link to="/posts">
                         <p className='text-sm font-semibold'>BLOG</p>
                     </Link>
                 </div>
-                <div className='flex items-center'>
+                <div className='flex items-center justify-center'>
                     <p className='text-sm font-semibold'>SERVICES</p>
                 </div>
-                <div className='flex items-center'>
-                    <p className='text-sm font-semibold'>CONTACT</p>
+                <div className='flex items-center justify-center'>
+                    <button>
+                        <a href='#contact' className='text-sm font-semibold'>CONTACT</a>
+                    </button>
                 </div>
             </div>
         </div>

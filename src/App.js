@@ -6,6 +6,7 @@ import BlogPost from "./pages/Blog/BlogPost";
 import Home from "./pages/Home/Home";
 import MenuPage from "./pages/Menu/Menu";
 import { useSelector } from "react-redux";
+import ScrollToTop from "./utils";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className="body">
       <Router>
+        <ScrollToTop/>
         <Switch>
           <Route exact path="/">
             <Home/>

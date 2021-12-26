@@ -11,7 +11,9 @@ const Suggestion = () => {
                     <h1 className='subtitle mb-3'>Special Rice</h1>
                     <div className='flex justify-between'>
                         <p className='text-sm w-4/6'>Perboiled rice sauted in shrimps, shredded beef, chicken, veggies..</p>
-                        <button className='buttons rounded-xl font-semibold'>Place Order</button>
+                        <button className='buttons rounded-xl font-semibold'>
+                            <a href='#contact'>Place Order</a>
+                        </button>
                     </div>
                 </div>
             </div>

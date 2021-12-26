@@ -14,7 +14,7 @@ const Allmenu = () => {
     const fetchMenu = async () => {
       const res = await (await axios.get("/menus")).data;
       console.log(res);
-      setMenu(res);
+      setMenu(res.slice(0,4));
     };
 
     fetchMenu();
