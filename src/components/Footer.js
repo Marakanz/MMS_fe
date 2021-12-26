@@ -24,9 +24,11 @@ const Footer = () => {
                         <article>
                             <h3 className='text-sm mb-5 font-semibold capitalize'>FOLLOW US ON SOCIAL MEDIA</h3>
                             <div className='flex justify-center'>
-                                <img src={instagram} alt="footer-img" className='h-6 w-6 mr-10'/>
-                                <img src={twitter} alt="footer-img" className='h-6 w-6 mr-10'/>
-                                <img src={facebook} alt="footer-img" className='h-6 w-6 mr-10'/>
+                                <a href='https://instagram.com/mms.catering?utm_medium=copy_link'>
+                                    <img src={instagram} alt="footer-img" className='h-6 w-6 mr-10' />
+                                </a>
+                                {/* <img src={twitter} alt="footer-img" className='h-6 w-6 mr-10' />
+                                <img src={facebook} alt="footer-img" className='h-6 w-6 mr-10' /> */}
                             </div>
                         </article>
                     </div>

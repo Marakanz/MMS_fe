@@ -31,7 +31,7 @@ const Contact = () => {
                         </div>
                         <div className='flex items-center my-5'>
                             <img src={PhoneIcon} className='h-4 w-4 mr-4'/>
-                            <p className='font-sm'>+1 414-556-6480, +1 414-589-2457</p>
+                            <a href='tel:+1 414-588-8355'>+1 414-588-8355</a>
                         </div>
                     </div>
                 </div>
