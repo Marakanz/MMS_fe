@@ -12,10 +12,8 @@ const Footer = () => {
                 <div className='flex items-center mt-8 justify-center'>
                     <article className='mb-12 md:w-4/5'>
                         <p className='text-base'>
-                            At MM Catering, we egestas Quam aliquam orci,
-                            amet feugiat aliquam pharetra. Neque, nibh accumsan ut nunc eget lectus
-                            condimentum rhoncus ac. Urna, nisl gravida sit in ipsum elit etiam. Et pulvinar
-                            euismod aliquam consequat.
+                            At MM'S Catering, we offer delicious african dishes, home delivery services,
+                            parties, events and many more. Send us a message to get started.
                         </p>
                     </article>
                 </div>
@@ -24,13 +22,13 @@ const Footer = () => {
                         <article>
                             <h3 className='text-sm mb-5 font-semibold capitalize'>FOLLOW US ON SOCIAL MEDIA</h3>
                             <div className='flex justify-center'>
-                                <img src={instagram} alt="footer-img" className='h-6 w-6 mr-10'/>
-                                <img src={twitter} alt="footer-img" className='h-6 w-6 mr-10'/>
-                                <img src={facebook} alt="footer-img" className='h-6 w-6 mr-10'/>
+                                <img src={instagram} alt="footer-img" className='h-6 w-6 mr-10' />
+                                <img src={twitter} alt="footer-img" className='h-6 w-6 mr-10' />
+                                <img src={facebook} alt="footer-img" className='h-6 w-6 mr-10' />
                             </div>
                         </article>
                     </div>
-                    <div>
+                    <div onClick={() => window.scrollTo(0, 0)}>
                         <img src={arrow} alt="arrow-img" className="h-32 w-32" />
                     </div>
                 </div>
