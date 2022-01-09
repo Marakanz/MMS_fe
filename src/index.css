@@ -129,11 +129,11 @@ code {
   }
   .sidenav {
     height: 100%;
-    width: max-content;
+    /* width: max-content; */
     @apply bg-white px-4 py-20 ;
   }
   .profile-info {
-    width: inherit;
+    width: 100%;
   }
   .login-input {
     @apply rounded-full mb-8 w-full md:w-4/5 px-5 focus:outline-none py-2 border border-gray-300;

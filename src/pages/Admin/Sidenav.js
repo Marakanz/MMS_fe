@@ -5,15 +5,15 @@ import { useSelector } from 'react-redux';
 import { useState } from 'react';
 
 
-const Sidenav = () => {
+const Sidenav = ({open}) => {
     const user = useSelector((state) => state.user.user);
     const history = useHistory().location.pathname.toLowerCase();
     const path = useRouteMatch().path;
     console.log(path);
 
     return (
-        <div className={user ? 'sidenav border-r border-gray-300' :
-            'hidden sidenav border-r border-gray-300'}>
+        <div className={ open ? 'sidenav w-max border-r border-gray-300' :
+            'sidenav w-max border-r border-gray-300 '}>
             {user ? (
                 <>
                     <div className='flex items-center mb-8'>

@@ -23,18 +23,12 @@ import {
   const persistedReducer = persistReducer(persistConfig, userReducer)
 
 
-export const store = configureStore({
+export default configureStore({
     reducer: {
-        user: persistedReducer,
+        user: userReducer,
         blogs: blogReducer,
         menus: menuReducer
     },
-    middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: {
-        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
-      },
-    }),
 })
 
-export let persistor = persistStore(store);
+// export let persistor = persistStore(store);
