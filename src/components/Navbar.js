@@ -2,6 +2,7 @@ import { Link, useHistory } from 'react-router-dom';
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 import { FaBars } from "react-icons/fa";
+import cookingIcon from '../images/cooking.png'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,9 @@ const Navbar = () => {
 
                 <div className='nav-center  block text-xl px-4 lg:flex lg:justify-between items-center'>
                     <div className='flex items-center px-5 justify-between'>
-                        <Link className='p-2' to='/'>MM's</Link>
+                        <Link className='p-2' to='/'>
+                            <img className='w-10' src={cookingIcon} alt='' />
+                        </Link>
                         <span onClick={() => setIsOpen(!isOpen)} className='p-2 lg:hidden cursor-pointer'>
                             <FaBars className='w-6 h-6'></FaBars>
                         </span>

@@ -13,10 +13,8 @@ const Footer = () => {
                 <div className='flex items-center mt-8 justify-center'>
                     <article className='mb-12 md:w-4/5'>
                         <p className='text-base'>
-                            At MM Catering, we egestas Quam aliquam orci,
-                            amet feugiat aliquam pharetra. Neque, nibh accumsan ut nunc eget lectus
-                            condimentum rhoncus ac. Urna, nisl gravida sit in ipsum elit etiam. Et pulvinar
-                            euismod aliquam consequat.
+                            At MM'S Catering, we offer delicious african dishes, home delivery services,
+                            parties, events and many more. Send us a message to get started.
                         </p>
                         <Link to="/admin">
                             <div className='flex items-center mt-8 hover:text-red-600'>
@@ -39,7 +37,7 @@ const Footer = () => {
                             </div>
                         </article>
                     </div>
-                    <div>
+                    <div onClick={() => window.scrollTo(0, 0)}>
                         <img src={arrow} alt="arrow-img" className="h-32 w-32" />
                     </div>
                 </div>

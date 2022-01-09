@@ -8,6 +8,7 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -49,8 +50,11 @@ code {
   }
   .menu-item {
     height: auto;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(255, 151, 29, 0.234) 0%, rgba(255, 255, 255, 0.39) 90.93%);
+    background: linear-gradient(
+      180deg,
+      rgba(255, 151, 29, 0.234) 0%,
+      rgba(255, 255, 255, 0.39) 90.93%
+    );
   }
   .subtitle {
     @apply font-semibold mb-3 text-4xl;
@@ -106,7 +110,7 @@ code {
   }
   .single-post {
     height: 450px;
-    @apply bg-gray-50
+    @apply bg-gray-50;
   }
   .recipe1 {
     background-image: url("./images/recipe1.png");
