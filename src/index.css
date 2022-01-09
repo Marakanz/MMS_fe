@@ -49,6 +49,7 @@ code {
   }
   .menu-item {
     height: auto;
+    width: 100%;
     background: linear-gradient(180deg, rgba(255, 151, 29, 0.234) 0%, rgba(255, 255, 255, 0.39) 90.93%);
   }
   .subtitle {
@@ -123,13 +124,15 @@ code {
     background-size: cover;
   }
   .sidenav {
-    height: 100vh;
+    height: 100%;
+    width: max-content;
+    @apply bg-white px-4 py-20 ;
   }
   .profile-info {
     width: inherit;
   }
   .login-input {
-    @apply rounded-full mb-8 w-4/5 px-5 focus:outline-none py-2 border border-gray-300;
+    @apply rounded-full mb-8 w-full md:w-4/5 px-5 focus:outline-none py-2 border border-gray-300;
   }
 }
 

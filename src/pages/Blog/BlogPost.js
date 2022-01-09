@@ -23,7 +23,7 @@ const BlogPost = () => {
     return (
         <div>
             <Navbar />
-            <div className='p-12'>
+            <div className='p-6 md:p-12'>
                 <div className='flex flex-col justify-center items-center mb-6'>
                     <h1 className='subtitle font-2xl text-center'>{singleBlog.title}</h1>
                     <p className='text-sm text-gray-500 text-center'>{singleBlog.createdAt}</p>

@@ -19,7 +19,6 @@ const Articles = () => {
             <div className='grid md:grid-cols-3 gap-8'>
                 {blogs?.map((blog) => (
                     <Singleblog key={blog._id} blog={blog} />
-
                 ))}
             </div>
         </div>

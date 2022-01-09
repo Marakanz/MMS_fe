@@ -4,9 +4,8 @@ import Sidenav from './Sidenav'
 
 const CreateBlog = () => {
     return (
-        <section className='flex pl-4'>
-            <Sidenav/>
-            <div className='w-3/4 px-8 pt-20 pb-16'>
+        <section className='flex'>
+            <div className='w-full px-8 pt-20 pb-16'>
                 <Form />
             </div>
         </section>

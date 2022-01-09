@@ -2,7 +2,7 @@ import React from "react";
 
 const Food = ({ item }) => {
   return (
-    <div className="w-full p-3 md:p-6 rounded-3xl bg-opacity-30 menu-item">
+    <div className="mx-auto p-3 md:p-6 rounded-3xl bg-opacity-30 menu-item">
       {item ? (
         <>
           <div className="flex items-center justify-center">

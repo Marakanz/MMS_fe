@@ -21,9 +21,9 @@ const CreateMenu = () => {
         createMenu(dispatch, newMenu);
     }
     return (
-        <div className="flex pl-4">
-            <Sidenav/>
-           <div className='w-3/4 px-8 pt-20 pb-16'>
+        <div className="flex">
+            {/* <Sidenav/> */}
+           <div className='w-full px-8 pt-20 pb-16'>
            <form className="flex flex-col w-full">
                 <h1 className='font-lg mb-3'>Food name:</h1>
                 <input className="w-full rounded-xl px-4 mb-4 border border-gray-300 py-1 font-lg"

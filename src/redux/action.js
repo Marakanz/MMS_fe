@@ -53,17 +53,7 @@ export const login = async(dispatch, user) => {
     }
 }
 
-export const register = async(dispatch, newUser) => {
-    dispatch(registerStart());
-    try {
-            const res = await axios.post("/signup", newUser);
-            dispatch(registerSuccess(res.data));
-            console.log("New user created");
-            console.log(res.data);
-    } catch(err) {
-        dispatch(registerFailure());
-    }
-}
+
 // BLOG ACTIONS
 export const getBlogs = async(dispatch) => {
     dispatch(getBlogStart());

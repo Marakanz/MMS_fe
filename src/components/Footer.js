@@ -4,6 +4,7 @@ import facebook from "../images/facebook.svg";
 import arrow from "../images/arrow.svg"
 import instagram from "../images/instagram.svg";
 import twitter from "../images/twitter.svg";
+import { FaUser } from 'react-icons/fa';
 
 const Footer = () => {
     return (
@@ -17,6 +18,12 @@ const Footer = () => {
                             condimentum rhoncus ac. Urna, nisl gravida sit in ipsum elit etiam. Et pulvinar
                             euismod aliquam consequat.
                         </p>
+                        <Link to="/admin">
+                            <div className='flex items-center mt-8 hover:text-red-600'>
+                                <p className='text-base mr-3'> Admin:</p>
+                                <FaUser className='h-4 w-4'/>
+                            </div>
+                        </Link>
                     </article>
                 </div>
                 <div className='flex items-center justify-around'>
