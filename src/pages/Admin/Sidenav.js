@@ -12,11 +12,11 @@ const Sidenav = ({open}) => {
     console.log(path);
 
     return (
-        <div className={ open ? 'sidenav w-max border-r border-gray-300' :
-            'sidenav w-max border-r border-gray-300 '}>
+        <div className={ open ? 'sidenav w-full border-r border-gray-300' :
+            'sidenav w-full border-r border-gray-300 '}>
             {user ? (
                 <>
-                    <div className='flex items-center mb-8'>
+                    <div className='md:flex items-center mb-8'>
                         <img src={profilePic} className='h-12 w-12' />
                         <div className='ml-3 profile-info'>
                             <p className='font-base mb-1'>{user.username}</p>

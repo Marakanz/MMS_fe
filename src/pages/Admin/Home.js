@@ -12,10 +12,10 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className='flex'>
-            <div className={isOpen ? 'w-max md:block z-10 transition duration-500' : 'z-10 transition duration-500 w-0 md:block md:w-max'}>
+            <div className={isOpen ? 'w-max z-10 transition duration-500' : 'w-0 md:w-max z-10 transition duration-500'}>
                 <Sidenav open={isOpen}/>
             </div>
-            <div className='w-full z-0'>
+            <div className='w-full z-0 top-0 left-0 fixed'>
                 <div className='p-4 bg-white border-b border-gray-400 sticky top-0 md:hidden'>
                     <span onClick={() => setIsOpen(!isOpen)}>
                         <FaBars className='w-8 h-8'/>
