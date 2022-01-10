@@ -30,7 +30,7 @@ const Form = () => {
                 <input
                     className="w-full rounded-xl border mb-4 border-gray-300 h-28"
                     type="file"
-                    accept='videos'
+                    accept='video/*,image/*'
                     name="blog-image"
                     onChange={(e) => setFile(e.target.files[0])} />
                 <h1 className='font-lg mb-3'>Body (Max of 450 words):</h1>

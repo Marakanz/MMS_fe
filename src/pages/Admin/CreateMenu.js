@@ -44,6 +44,7 @@ const CreateMenu = () => {
                  <input 
                  className="w-full rounded-xl border mb-4 border-gray-300 h-28" 
                  type="file"
+                 accept='image/*'
                  onChange={(e) => setImg(e.target.files[0])}/> 
                  <button 
                  type="submit" 

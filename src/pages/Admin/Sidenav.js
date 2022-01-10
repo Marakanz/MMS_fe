@@ -12,8 +12,8 @@ const Sidenav = ({open}) => {
     console.log(path);
 
     return (
-        <div className={ open ? 'sidenav w-full border-r border-gray-300' :
-            'sidenav w-full border-r border-gray-300 '}>
+        <div className={ open ? 'sidenav w-max border-r border-gray-300' :
+            'sidenav w-max border-r border-gray-300 '}>
             {user ? (
                 <>
                     <div className='md:flex items-center mb-8'>

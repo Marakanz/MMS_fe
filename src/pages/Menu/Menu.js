@@ -26,7 +26,7 @@ const MenuPage = () => {
             <div className='flex mb-4 items-center justify-end'>
                 <button className='buttons'>Sort</button>
             </div>
-            <div className='grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-5 px-5'>
+            <div className='grid gap-3 md:grid-cols-4 md:gap-5 px-5'>
                 { menu?.map((item) => (
                     <Food item={item}/>
                 ))}
