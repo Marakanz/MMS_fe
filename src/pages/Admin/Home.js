@@ -12,7 +12,7 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <div className='flex'>
-            <div className={isOpen ? 'w-max z-10 transition duration-500' : 'w-0 hidden md:w-max z-10 transition duration-500'}>
+            <div className={isOpen ? 'w-max h-full fixed z-10 transition duration-500' : 'w-0 hidden md:w-max z-10 transition duration-500'}>
                 <Sidenav open={isOpen}/>
             </div>
             <div className='w-full'>
