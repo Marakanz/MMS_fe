@@ -9,7 +9,6 @@ const Sidenav = ({open}) => {
     const user = useSelector((state) => state.user.user);
     const history = useHistory().location.pathname.toLowerCase();
     const path = useRouteMatch().path;
-    console.log(path);
 
     return (
         <div className={ open ? 'sidenav w-max border-r border-gray-300' :
@@ -79,11 +78,14 @@ const Sidenav = ({open}) => {
                     }
 
                     <div className='w-full active:bg-yellow-400 mb-2 py-2 px-3 rounded-r-full text-white'>
-                        <Link>
                             <li className='w-full text-black'>Direct messages</li>
-                        </Link>
                     </div>
                 </ul>
+                <div className='flex justify-center mt-5'>
+                    <Link to="/">
+                        <button className='buttons'> Home </button>
+                    </Link>
+                </div>
             </div>
         </div>
     )
